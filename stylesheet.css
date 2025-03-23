@@ -13,23 +13,29 @@
     --margin-right: 30px;
 }
 
+html, body {
+    overscroll-behavior: none;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Figtree, sans-serif;
     background: linear-gradient(0deg, firebrick, coral); 
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 div.left {
-    height: 100vh;
+    height: 100%;
     width: var(--zucc);
 }
 
 div.left img#background {
-    height: 100vh;
+    height: 100%;
     width: var(--zucc);
-    position: relative;
+    position: absolute;
 }
 
 div.left div.logo {
@@ -40,9 +46,9 @@ div.left div.logo {
     gap: 10px;
     position: absolute;
     width: var(--zucc);
-    height: 15vh;
+    height: 6rem;
     left: var(--zucc/2);
-    top: 20vh;
+    top: 20%;
 }
 
 div.logo div {
@@ -52,13 +58,13 @@ div.logo div {
 }
 
 div.logo img#logo {
-    width: 8vw;
-    height: 8vh;  
+    width: 5rem;
+    height: 5rem;  
     transform: rotate(-10deg);  
 }
 
 div.right {
-    height: 100vh;
+    height: 100%;
     width: var(--right);
     background-color: rgb(240, 240, 240);
     display: flex;
@@ -120,7 +126,7 @@ input:focus {
 
 div.submit {
     margin-left: var(--margin-right);
-    margin-top: 5vh;
+    margin-top: 30px;
 }
 
 div.submit button {
