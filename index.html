@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="left">
+        <img src="zuck.jpeg" alt="the zuck" id="background">
+        <div class="logo">
+            <img src="chev.png" alt="civmoji" id="logo">
+            <div>The Zucc</div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="info">
+            <p>This is a Zucc newsletter.</p> 
+            <p>Sign up to get the latest metaverse information.</p>
+        </div>
+        
+        <form action="" method="post" id="myform">
+            <span>Do you wanna see something neat?</span>
+
+            <section>
+                <p>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                </p>
+            
+                <p>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </p>
+
+                <p>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" name="mail">
+                </p>
+
+                <p>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" name="password" required>
+                </p>
+
+                <p>
+                    <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="pwd-confirm" name="password-confirm" required>
+                </p>
+
+            </section>
+            
+        </form>
+
+        <div class="submit">
+            <button type="submit" form="myform">Create Account</button>
+            <p></p>
+            <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+        
+    </div>
+</body>
+</html>

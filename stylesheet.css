@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-Light.woff2') format('woff2'),
+        url('Figtree-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --zucc: 25vw;
+    --right: calc(100vw - var(--zucc) - 30vw);
+    --margin-right: 30px;
+}
+
+body {
+    font-family: Figtree, sans-serif;
+    background: linear-gradient(0deg, firebrick, coral); 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+div.left {
+    height: 100vh;
+    width: var(--zucc);
+}
+
+div.left img#background {
+    height: 100vh;
+    width: var(--zucc);
+    position: relative;
+}
+
+div.left div.logo {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    width: var(--zucc);
+    height: 15vh;
+    left: var(--zucc/2);
+    top: 20vh;
+}
+
+div.logo div {
+    opacity: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div.logo img#logo {
+    width: 8vw;
+    height: 8vh;  
+    transform: rotate(-10deg);  
+}
+
+div.right {
+    height: 100vh;
+    width: var(--right);
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.info {
+    margin-left: var(--margin-right);
+    font-size: 1.5rem;
+}
+
+
+form {
+    background-color: white;
+    padding: 30px 0;
+    box-shadow: 0 5px 5px lightgray;
+}
+
+form span {
+    margin-left: var(--margin-right);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+form section p {
+    margin-left: var(--margin-right);
+    display: flex;   
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+form section label {
+    font-size: 0.7rem;
+}
+
+form section input {
+    width: 200px;
+    appearance: none;
+    border-radius: 3px;
+    border: 2px solid lightgray;
+}
+
+input:invalid {
+    border-color: firebrick;
+}
+
+input:focus {
+    border-color: lightblue;
+    box-shadow: 0 0 5px gray;
+}
+
+
+div.submit {
+    margin-left: var(--margin-right);
+    margin-top: 5vh;
+}
+
+div.submit button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #e35d6a;
+    border: none;
+    color: white;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+div.submit button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+div.submit a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color:#e35d6a;
+}
+
+div.submit a:visited {
+    color: red;
+}
+
+div.submit a:hover {
+    color: pink
+}
